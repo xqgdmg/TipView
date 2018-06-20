@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#55ff0000"
+    android:orientation="vertical"
+    tools:context="dmg.xqg.com.tipview.MainActivity">
+
+    <dmg.xqg.com.tipview.TipView
+        android:visibility="gone"
+        android:id="@+id/tipView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:tipBackgroundColor="#5500ff00"
+        app:tipText="网络不可用"
+        app:tipTextColor="#550000ff"
+        app:tipTextSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvClickMe"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="点我显示提示"/>
+
+</LinearLayout>
